@@ -8,5 +8,5 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel="customers", path="customers")
 public interface CustomerRepository extends PagingAndSortingRepository<Customer, Long> {
-    List<Customer> findByLastName(@Param("lastName") String lastName);
+    List<Customer> findByLastName(@Param("name") String name);
 }
